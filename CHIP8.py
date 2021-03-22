@@ -246,7 +246,7 @@ class CHIP8:
 
 x = CHIP8()
 byteCode = []
-with open("breakout.ch8", mode = "rb") as file:
+with open(input("Choose a .ch8 file to open\n>>> "), mode = "rb") as file:
     for each in file.readlines():
         for byte in each:
             byteCode.append(byte)
